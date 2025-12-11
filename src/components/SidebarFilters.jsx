@@ -9,7 +9,7 @@ export function SidebarFilters({
   onColorSelect = () => {},
 }) {
   return (
-    <div className="bg-white rounded-xl shadow-sm p-6">
+    <div className="bg-red-600 rounded-xl shadow-sm p-6">
       <h2 className="text-xl font-bold text-gray-800 mb-4">Filters</h2>
 
       <div className="mb-6">
