@@ -1,16 +1,14 @@
-import React from "react";
-import { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import mylogo from "../assets/invitattion_front/logo-web.png";
-
-import "..//App.css";
-import {Link} from "react-router-dom";
-import Homepic from "../assets/invitattion_front/homepic.jpg"
-import Homepic1 from "../assets/invitattion_front/homepic1.jpg"
-import Homepic2 from "../assets/invitattion_front/homepic2.jpg"
-import Homepic3 from "../assets/invitattion_front/homepic3.jpg"
-import Homepic4 from "../assets/invitattion_front/homepic4.jpg"
-import Homepic5 from "../assets/invitattion_front/homepic5.jpg"
-
+import Loading from "../components/Loading";
+import "../App.css";
+import { Link } from "react-router-dom";
+import Homepic from "../assets/invitattion_front/homepic.jpg";
+import Homepic1 from "../assets/invitattion_front/homepic1.jpg";
+import Homepic2 from "../assets/invitattion_front/homepic2.jpg";
+import Homepic3 from "../assets/invitattion_front/homepic3.jpg";
+import Homepic4 from "../assets/invitattion_front/homepic4.jpg";
+import Homepic5 from "../assets/invitattion_front/homepic5.jpg";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +18,7 @@ export function Navbar() {
   };
 
   return (
-     <div className="fixed top-0 left-0 w-full z-50">
+    <div className="fixed top-0 left-0 w-full z-50">
       {/* Top Promotional Banner */}
       <div className="bg-gray-100 text-center py-3 px-4">
         <marquee className="text-xs md:text-sm text-gray-700">
@@ -30,7 +28,7 @@ export function Navbar() {
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-white shadow-sm backdrop-blur-md bg-white/80 shadow-md z-50 border-b border-gray-200">
+      <nav className="bg-white shadow-sm backdrop-blur-md bg-white/1 shadow-md z-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Hamburger Menu Button */}
@@ -47,17 +45,16 @@ export function Navbar() {
             {/* Logo */}
             <div className="flex-1 flex justify-center">
               <div className="text-center">
-               <img src ={mylogo} alt="website logo" className=" w-25 h-25"/>
+                <img src={mylogo} alt="website logo" className="w-25 h-25" />
               </div>
             </div>
 
             {/* Shopping Cart Icon */}
-             <button
-              className="p-2 hover:bg-gray-50 rounded  transition-colors"
+            <button
+              className="p-2 hover:bg-gray-50 rounded transition-colors"
               aria-label="Shopping Cart"
             >
-              <i class="fa-solid fa-lg fa-users"></i>
-              
+              <i className="fa-solid fa-lg fa-users"></i>
             </button>
 
             <button
@@ -90,6 +87,7 @@ export function Navbar() {
           onClick={toggleMenu}
         ></div>
       )}
+
       {/* Slide-out Menu */}
       <div
         className={`fixed top-0 left-0 h-full w-80 bg-white z-50 transform transition-transform duration-300 ease-in-out ${
@@ -167,17 +165,9 @@ export function Navbar() {
           {/* Menu Items */}
           <div className="flex-1 overflow-y-auto">
             <nav className="py-4">
-              <MenuItem
-                text="ABOUT US"
-                hasSubmenu
-                
-              />
+              <MenuItem text="ABOUT US" hasSubmenu />
               <MenuItem text="WEDDING WEBSITE" hasSubmenu submenuItems={[]} />
-              <MenuItem
-                text="E-INVITATIONS"
-                hasSubmenu
-                submenuItems={[]}
-              />
+              <MenuItem text="E-INVITATIONS" hasSubmenu submenuItems={[]} />
               <MenuItem text="CONTACT US" />
               <MenuItem text="PRICING" hasSubmenu submenuItems={[]} />
               <MenuItem text="REVIEWS" />
@@ -191,11 +181,11 @@ export function Navbar() {
   );
 }
 
-
 // Menu Item Component
 function MenuItem({ text, hasSubmenu = false, submenuItems = [] }) {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
-const toggleSubmenu = () => {
+
+  const toggleSubmenu = () => {
     if (hasSubmenu) {
       setIsSubmenuOpen(!isSubmenuOpen);
     }
@@ -248,40 +238,48 @@ const toggleSubmenu = () => {
     </div>
   );
 }
+
+// HOME COMPONENT (ONLY ONE!)
 export default function Home() {
+  // Loading state
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Loading timer
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Show loading
+  if (isLoading) {
+    return <Loading />;
+  }
+
+  // Main content
   return (
     <div className="pt-52 min-h-screen bg-gray-50 px-4 items-center justify-center flex">
-  
-  {/* Header */}
-  <header className="grid grid-cols-2 items-center text-center gap-[100px]">
+      {/* Header */}
+      <header className="grid grid-cols-2 items-center text-center gap-[100px]">
+        <div className="mb-20 font-stretch-expanded text-shadow-amber-200 text-lg md:text-2xl lg:text-4xl">
+          <p>
+            Glad you're here! Design, send, and manage invitations in just a few clicks.
+            Create beautiful invitations for any occasion with our easy-to-use platform.
+            Customize your design, send it to your guests, and track RSVPs effortlessly.
+          </p>
+        </div>
 
-    <div className="mb-20 font-stretch-expanded  text-shadow-amber-200 text-lg md:text-2xl lg:text-4xl ">
-      <p>
-        Glad you’re here! Design, send, and manage invitations in just a few clicks.
-        Create beautiful invitations for any occasion with our easy-to-use platform.
-        Customize your design, send it to your guests, and track RSVPs effortlessly.
-      </p>
+        {/* Image Row */}
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <img src={Homepic} className="w-40 h-auto rounded" alt="Home pic" />
+          <img src={Homepic1} className="w-40 h-auto rounded" alt="Home pic 1" />
+          <img src={Homepic2} className="w-40 h-auto rounded" alt="Home pic 2" />
+          <img src={Homepic3} className="w-40 h-auto rounded" alt="Home pic 3" />
+          <img src={Homepic4} className="w-40 h-auto rounded" alt="Home pic 4" />
+          <img src={Homepic5} className="w-40 h-auto rounded" alt="Home pic 5" />
+        </div>
+      </header>
     </div>
-
-    {/* Image Row */}
-    <div className="flex flex-wrap items-center justify-center gap-4">
-      <img src={Homepic} className="w-40 h-auto rounded" />
-      <img src={Homepic1} className="w-40 h-auto rounded" />
-      <img src={Homepic2} className="w-40 h-auto rounded" />
-      <img src={Homepic3} className="w-40 h-auto rounded" />
-      <img src={Homepic4} className="w-40 h-auto rounded" />
-      <img src={Homepic5} className="w-40 h-auto rounded" />
-    </div>
-
-  </header>
-</div>
-
   );
 }
-
-
-
-
-
-
-
