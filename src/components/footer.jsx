@@ -12,15 +12,15 @@ import c8 from "../assets/invitattion_front/c8.png";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-red-950 text-white py-10 px-4">
+    <footer className="w-full px-4 py-10 text-white bg-red-950">
       
       {/* Top section: Country selector + Payment icons */}
-      <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
 
         {/* Country selector */}
         <div>
           <select
-            className="  bg-gray-600 text-white px-4 py-2 rounded-md"
+            className="px-4 py-2 text-white bg-gray-600 rounded-md "
           >
             <option>Cambodia (KH ៛)</option>
           </select>
@@ -33,14 +33,14 @@ export default function Footer() {
               key={index}
               src={img}
               alt={`payment-${index}`}
-              className="w-20 h-20 object-contain"
+              className="object-contain w-20 h-20"
             />
           ))}
         </div>
       </div>
 
       {/* Divider */}
-      <div className="border-t border-gray-500 my-8"></div>
+      <div className="my-8 border-t border-gray-500"></div>
 
       {/* Footer links */}
       <div className="flex flex-wrap justify-center gap-6 text-sm text-white">
@@ -52,7 +52,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="text-center mt-6 text-sm text-white">
+      <div className="mt-6 text-sm text-center text-white">
         © 2025 LINDA & DEVID — Powered by ETEC CENTER
       </div>
     </footer>
