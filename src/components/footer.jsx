@@ -13,15 +13,11 @@ import c8 from "../assets/invitattion_front/c8.png";
 export default function Footer() {
   return (
     <footer className="w-full px-4 py-10 text-white bg-red-950">
-      
       {/* Top section: Country selector + Payment icons */}
       <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-
         {/* Country selector */}
         <div>
-          <select
-            className="px-4 py-2 text-white bg-gray-600 rounded-md "
-          >
+          <select className="px-4 py-2 text-white bg-gray-600 rounded-md ">
             <option>Cambodia (KH ៛)</option>
           </select>
         </div>
@@ -33,14 +29,14 @@ export default function Footer() {
               key={index}
               src={img}
               alt={`payment-${index}`}
-              className="object-contain w-20 h-20"
+              className="object-contain w-20 h-20 "
             />
           ))}
         </div>
       </div>
 
       {/* Divider */}
-      <div className="my-8 border-t border-gray-500"></div>
+      <div className="my-8 border-t border-gray-500 "></div>
 
       {/* Footer links */}
       <div className="flex flex-wrap justify-center gap-6 text-sm text-white">
