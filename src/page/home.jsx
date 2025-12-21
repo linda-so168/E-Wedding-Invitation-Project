@@ -19,7 +19,7 @@ function MenuItem({ text, to = "/", hasSubmenu = false, onClick }) {
     <Link 
       to={to} 
       onClick={onClick}
-      className="flex items-center justify-between block px-8 py-4 transition-colors border-b border-gray-50 hover:bg-gray-50 group"
+      className="flex items-center justify-between px-8 py-4 transition-colors border-b border-gray-50 hover:bg-gray-50 group"
     >
       <span className="text-sm font-medium tracking-widest text-gray-600 uppercase group-hover:text-red-900">{text}</span>
       {hasSubmenu && <i className="fa-solid fa-chevron-right text-[10px] text-gray-300 group-hover:text-red-900 transition-transform"></i>}
@@ -130,7 +130,7 @@ export function Navbar({ cartCount = 0 }) { // Accept cartCount as a prop from A
               </div>
               <div className="flex-1 py-4 overflow-y-auto">
                 <MenuItem text="ABOUT US" to="/about" onClick={toggleMenu} />
-                <MenuItem text="E-INVITATIONS" to="/demo" onClick={toggleMenu} />
+                <MenuItem text="E-invitattionS" to="/demo" onClick={toggleMenu} />
                 <MenuItem text="CONTACT US" to="/contact" onClick={toggleMenu} />
                 <MenuItem text="PRICING" to="/pricing" onClick={toggleMenu} />
                 <MenuItem text="REVIEWS" to="/reviews" onClick={toggleMenu} />
@@ -179,7 +179,7 @@ export default function Home() {
             </div>
             
             <p className="max-w-md mx-auto text-base font-light leading-relaxed text-gray-500 md:text-lg lg:mx-0">
-              Design, send, and manage invitations in just a few clicks. 
+              Design, send, and manage invitattions in just a few clicks. 
               Experience the world's most elegant digital RSVP system.
             </p>
             
