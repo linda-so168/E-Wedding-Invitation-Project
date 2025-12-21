@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Assets
-import logo from "../assets/invitattion_front/logo-web.png";
+import Ni from "../assets/invitattion_front/logo-web.png";
 import Loading from "../components/Loading";
 import Homepic from "../assets/invitattion_front/homepic.jpg";
 import Homepic1 from "../assets/invitattion_front/homepic1.jpg";
@@ -76,7 +76,7 @@ export function Navbar({ cartCount = 0 }) { // Accept cartCount as a prop from A
 
           {/* Logo */}
           <Link to="/" className="flex justify-center flex-1 lg:translate-x-4">
-            <img src={logo} alt="website logo" className="object-contain w-auto h-10 md:h-14" />
+            <img src={Ni} alt="website logo" className="object-contain w-auto h-10 md:h-14" />
           </Link>
 
           {/* Right Icons */}
