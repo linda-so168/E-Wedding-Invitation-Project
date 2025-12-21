@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import your images
-import c1 from "../assets/invitattion_front/c1.png";
+
 import c2 from "../assets/invitattion_front/c2.png";
 import c3 from "../assets/invitattion_front/c3.png";
 import c4 from "../assets/invitattion_front/c4.png";
@@ -23,7 +23,7 @@ export default function Footer() {
 
         {/* Payment icons row */}
         <div className="flex flex-wrap justify-center gap-4">
-          {[c1, c2, c3, c4, c5, c6, c7, c8].map((img, index) => (
+          {[ c2, c3, c4, c5, c6, c7, c8].map((img, index) => (
             <img
               key={index}
               src={img}
