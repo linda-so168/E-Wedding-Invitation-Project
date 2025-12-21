@@ -26,3 +26,5 @@ export default {
   plugins: [],
 };
 
+// tailwind.config.js
+content: ["./index.html", "./src/**/*.{js,jsx}"],
