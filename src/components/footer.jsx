@@ -9,8 +9,6 @@ import c5 from "../assets/invitattion_front/c5.png";
 import c6 from "../assets/invitattion_front/c6.png";
 import c7 from "../assets/invitattion_front/c7.png";
 import c8 from "../assets/invitattion_front/c8.png";
-
-
 export default function Footer() {
   return (
     <footer className="w-full px-4 py-10 text-white bg-red-950">
