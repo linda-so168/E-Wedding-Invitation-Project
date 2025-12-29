@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Image imports
-import Homepic from "../assets/invitattion_front/homepic.jpg";
-import Homepic1 from "../assets/invitattion_front/homepic1.jpg";
-import Homepic2 from "../assets/invitattion_front/homepic2.jpg";
-import Homepic3 from "../assets/invitattion_front/homepic3.jpg";
-import Homepic4 from "../assets/invitattion_front/homepic4.jpg";
-import Homepic5 from "../assets/invitattion_front/homepic5.jpg";
+import Homepic from "../assets/invitattion_front_temp/homepic.jpg";
+import Homepic1 from "../assets/invitattion_front_temp/homepic1.jpg";
+import Homepic2 from "../assets/invitattion_front_temp/homepic2.jpg";
+import Homepic3 from "../assets/invitattion_front_temp/homepic3.jpg";
+import Homepic4 from "../assets/invitattion_front_temp/homepic4.jpg";
+import Homepic5 from "../assets/invitattion_front_temp/homepic5.jpg";
 
 export default function Home() {
   // Split images into two groups for the two columns

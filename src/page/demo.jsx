@@ -1,20 +1,20 @@
 import React, { useState, useRef } from "react";
 // Image imports remain the same
-import pic1 from "../assets/invitattion_front/pic1.jpg";
-import pic2 from "../assets/invitattion_front/pic2.png";
-import pic3 from "../assets/invitattion_front/pic3.webp";
-import pic4 from "../assets/invitattion_front/pic4.webp";
-import pic5 from "../assets/invitattion_front/pic5.webp";
-import pic6 from "../assets/invitattion_front/pic6.webp";
-import pic7 from "../assets/invitattion_front/pic7.webp";
-import pic8 from "../assets/invitattion_front/pic8.webp";
-import pic9 from "../assets/invitattion_front/pic9.webp";
-import pic10 from "../assets/invitattion_front/pic10.webp";
-import pic11 from "../assets/invitattion_front/pic11.webp";
-import pic12 from "../assets/invitattion_front/pic12.webp";
-import pic13 from "../assets/invitattion_front/pic13.webp";
-import pic14 from "../assets/invitattion_front/pic14.webp";
-import pic15 from "../assets/invitattion_front/pic15.webp";
+import pic1 from "../assets/invitattion_front_temp/pic1.jpg";
+import pic2 from "../assets/invitattion_front_temp/pic2.png";
+import pic3 from "../assets/invitattion_front_temp/pic3.webp";
+import pic4 from "../assets/invitattion_front_temp/pic4.webp";
+import pic5 from "../assets/invitattion_front_temp/pic5.webp";
+import pic6 from "../assets/invitattion_front_temp/pic6.webp";
+import pic7 from "../assets/invitattion_front_temp/pic7.webp";
+import pic8 from "../assets/invitattion_front_temp/pic8.webp";
+import pic9 from "../assets/invitattion_front_temp/pic9.webp";
+import pic10 from "../assets/invitattion_front_temp/pic10.webp";
+import pic11 from "../assets/invitattion_front_temp/pic11.webp";
+import pic12 from "../assets/invitattion_front_temp/pic12.webp";
+import pic13 from "../assets/invitattion_front_temp/pic13.webp";
+import pic14 from "../assets/invitattion_front_temp/pic14.webp";
+import pic15 from "../assets/invitattion_front_temp/pic15.webp";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   MapPin, Calendar, Clock, Users, X, Check, Heart, 

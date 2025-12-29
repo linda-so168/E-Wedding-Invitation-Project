@@ -2,15 +2,15 @@ import React from "react";
 
 // --- IMAGES ---
 // Ensure these paths are correct for your Vite/React project structure
-import Ti from "../assets/invitattion_front/p1.png";
-import P4 from "../assets/invitattion_front/frame1.png";
-import P5 from "../assets/invitattion_front/frame2.png";
-import P6 from "../assets/invitattion_front/frame3.png";
-import P7 from "../assets/invitattion_front/frame4.png";
-import P8 from "../assets/invitattion_front/frame5.png";
-import P9 from "../assets/invitattion_front/frame6.png";
-import P10 from "../assets/invitattion_front/frame7.png";
-import P11 from "../assets/invitattion_front/frame8.png";
+import P1 from "../assets/invitattion_front_temp/p1.png";
+import P4 from "../assets/invitattion_front_temp/frame1.png";
+import P5 from "../assets/invitattion_front_temp/frame2.png";
+import P6 from "../assets/invitattion_front_temp/frame3.png";
+import P7 from "../assets/invitattion_front_temp/frame4.png";
+import P8 from "../assets/invitattion_front_temp/frame5.png";
+import P9 from "../assets/invitattion_front_temp/frame6.png";
+import P10 from "../assets/invitattion_front_temp/frame7.png";
+import P11 from "../assets/invitattion_front_temp/frame8.png";
 
 const products = [
   { id: 1, title: "CREATIVITE Online Wedding RSVP Page – Collect RSVPs & Track Guests", price: "KHR 153,000.00", image: P1 },
