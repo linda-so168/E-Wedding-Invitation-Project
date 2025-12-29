@@ -1,20 +1,20 @@
 import React, { useState, useRef } from "react";
 // Image imports remain the same
-import pic1 from "../assets/invitattion_front_temp/pic1.jpg";
-import pic2 from "../assets/invitattion_front_temp/pic2.png";
-import pic3 from "../assets/invitattion_front_temp/pic3.webp";
-import pic4 from "../assets/invitattion_front_temp/pic4.webp";
-import pic5 from "../assets/invitattion_front_temp/pic5.webp";
-import pic6 from "../assets/invitattion_front_temp/pic6.webp";
-import pic7 from "../assets/invitattion_front_temp/pic7.webp";
-import pic8 from "../assets/invitattion_front_temp/pic8.webp";
-import pic9 from "../assets/invitattion_front_temp/pic9.webp";
-import pic10 from "../assets/invitattion_front_temp/pic10.webp";
-import pic11 from "../assets/invitattion_front_temp/pic11.webp";
-import pic12 from "../assets/invitattion_front_temp/pic12.webp";
-import pic13 from "../assets/invitattion_front_temp/pic13.webp";
-import pic14 from "../assets/invitattion_front_temp/pic14.webp";
-import pic15 from "../assets/invitattion_front_temp/pic15.webp";
+const pic1 = "/assets/pic1.jpg";
+const pic2 = "/assets/pic2.png";
+const pic3 = "/assets/pic3.webp";
+const pic4 = "/assets/pic4.webp";
+const pic5 = "/assets/pic5.webp";
+const pic6 = "/assets/pic6.webp";
+const pic7 = "/assets/pic7.webp";
+const pic8 = "/assets/pic8.webp";
+const pic9 = "/assets/pic9.webp";
+const pic10 = "/assets/pic10.webp";
+const pic11 = "/assets/pic11.webp";
+const pic12 = "/assets/pic12.webp";
+const pic13 = "/assets/pic13.webp";
+const pic14 = "/assets/pic14.webp";
+const pic15 = "/assets/pic15.webp";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   MapPin, Calendar, Clock, Users, X, Check, Heart, 

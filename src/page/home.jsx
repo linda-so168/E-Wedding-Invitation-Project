@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Assets
-import Ni from "../assets/invitattion_front_temp/logo-web.png";
+const Ni = "/assets/logo-web.png";
 import Loading from "../components/Loading";
-import Homepic from "../assets/invitattion_front_temp/homepic.jpg";
-import Homepic1 from "../assets/invitattion_front_temp/homepic1.jpg";
-import Homepic2 from "../assets/invitattion_front_temp/homepic2.jpg";
-import Homepic3 from "../assets/invitattion_front_temp/homepic3.jpg";
-import Homepic4 from "../assets/invitattion_front_temp/homepic4.jpg";
-import Homepic5 from "../assets/invitattion_front_temp/homepic5.jpg";
+const Homepic = "/assets/homepic.jpg";
+const Homepic1 = "/assets/homepic1.jpg";
+const Homepic2 = "/assets/homepic2.jpg";
+const Homepic3 = "/assets/homepic3.jpg";
+const Homepic4 = "/assets/homepic4.jpg";
+const Homepic5 = "/assets/homepic5.jpg";
 import "../App.css";
 
 // --- SUB-COMPONENT: MENU ITEM ---

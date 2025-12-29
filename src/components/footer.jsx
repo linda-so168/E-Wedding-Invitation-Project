@@ -1,14 +1,13 @@
 import React from "react";
 
 // Import your images
-
-import c2 from "../assets/invitattion_front_temp/c2.png";
-import c3 from "../assets/invitattion_front_temp/c3.png";
-import c4 from "../assets/invitattion_front_temp/c4.png";
-import c5 from "../assets/invitattion_front_temp/c5.png";
-import c6 from "../assets/invitattion_front_temp/c6.png";
-import c7 from "../assets/invitattion_front_temp/c7.png";
-import c8 from "../assets/invitattion_front_temp/c8.png";
+const c2 = "/assets/c2.png";
+const c3 = "/assets/c3.png";
+const c4 = "/assets/c4.png";
+const c5 = "/assets/c5.png";
+const c6 = "/assets/c6.png";
+const c7 = "/assets/c7.png";
+const c8 = "/assets/c8.png";
 export default function Footer() {
   return (
     <footer className="w-full px-4 py-10 text-white bg-red-950">

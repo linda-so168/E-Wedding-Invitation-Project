@@ -2,15 +2,15 @@ import React from "react";
 
 // --- IMAGES ---
 // Ensure these paths are correct for your Vite/React project structure
-import P1 from "../assets/invitattion_front_temp/p1.png";
-import P4 from "../assets/invitattion_front_temp/frame1.png";
-import P5 from "../assets/invitattion_front_temp/frame2.png";
-import P6 from "../assets/invitattion_front_temp/frame3.png";
-import P7 from "../assets/invitattion_front_temp/frame4.png";
-import P8 from "../assets/invitattion_front_temp/frame5.png";
-import P9 from "../assets/invitattion_front_temp/frame6.png";
-import P10 from "../assets/invitattion_front_temp/frame7.png";
-import P11 from "../assets/invitattion_front_temp/frame8.png";
+const P1 = "/assets/p1.png";
+const P4 = "/assets/frame1.png";
+const P5 = "/assets/frame2.png";
+const P6 = "/assets/frame3.png";
+const P7 = "/assets/frame4.png";
+const P8 = "/assets/frame5.png";
+const P9 = "/assets/frame6.png";
+const P10 = "/assets/frame7.png";
+const P11 = "/assets/frame8.png";
 
 const products = [
   { id: 1, title: "CREATIVITE Online Wedding RSVP Page – Collect RSVPs & Track Guests", price: "KHR 153,000.00", image: P1 },

@@ -1,8 +1,8 @@
 import React from 'react';
-import Linda from "../assets/invitattion_front_temp/lindapic.jpg";
-import Devid from "../assets/invitattion_front_temp/Devidpic.png";
-import Com from "../assets/invitattion_front_temp/com1.png";
-import Com2 from "../assets/invitattion_front_temp/com2.png";
+const Linda = "/assets/lindapic.jpg";
+const Devid = "/assets/Devidpic.png";
+const Com = "/assets/c2.png";
+const Com2 = "/assets/c3.png";
 
 const Card = ({ number, little, title, description, image, isDevid }) => {
   return (

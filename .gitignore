@@ -22,3 +22,5 @@ dist-ssr
  src/assets/invitattion_front/  
 *.sln
 *.sw?
+.vercel
+.env*.local

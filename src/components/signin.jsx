@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Mylogo from "../assets/invitattion_front_temp/logo-web.png"
+const Mylogo = "/assets/logo-web.png"
 
 // Your imported component
 import Home from "../page/home.jsx";
